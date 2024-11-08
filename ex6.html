@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex6</title>
+<body>
+<p id="target"></p>
+<script>
+      "use strict";
+      const choice = confirm('should i calculate the square root');
+      if(choice==false){
+        document.querySelector('#target').innerHTML="the square root is not calculated";
+      }
+      else{
+        const number =prompt("enter your number.");
+        if(parseInt(number)>0){
+           document.querySelector("#target").innerHTML=`the square root of ${number} is ${Math.sqrt(parseInt(number))}`
+        }
+      else{
+           document.querySelector("#target").innerHTML="the square root of a negative is not defined ";
+
+        }
+
+      }
+</script>
+
+</body>
+</html>

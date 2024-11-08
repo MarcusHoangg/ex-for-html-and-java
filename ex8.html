@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex8</title>
+</head>
+<body>
+<ul id="target"></ul>
+<script>
+  "use strict";
+  const start_year=prompt('enter starting year ');
+  const end_year=prompt('enter ending year');
+  for(let i = start_year;i<=end_year;i++) {
+    if(i%4===0 && i% 100!==0 || i%400===0){
+     document.querySelector("#target").innerHTML+= `<li>${i}</li>`;
+    }
+  }
+
+</script>
+</body>
+</html>

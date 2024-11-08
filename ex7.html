@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex7</title>
+<body>
+<p id="target"></p>
+<script>
+  'use strict';
+  const times=prompt("enter the number of dice rolls.");
+  let result = 0;
+  for(let i =1;i<=times;i++){
+    result+=Math.floor(Math.random()*6+1);
+  }
+  document.querySelector('#target').innerHTML=`sum of the dice rolls is ${result}.`;
+</script>
+
+</body>
+</html>
